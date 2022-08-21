@@ -2,4 +2,4 @@
 
 Github repository containing my compiled HTML file:
 
-[Compiled HTML](https://htmlpreview.github.io/?https://raw.githubusercontent.com/pozueco/PracticalMachineLearningWeek4/main/PracticalMachineLearningWeek4.html)
+[Compiled HTML](https://htmlpreview.github.io/?https://raw.githubusercontent.com/pozueco/DevelopingDataProductsWeek2/main/DevelopingDataProductsWeek2.html)
