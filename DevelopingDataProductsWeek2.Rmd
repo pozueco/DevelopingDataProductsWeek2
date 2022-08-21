@@ -1,0 +1,29 @@
+---
+title: "Web page using R Markdown and a map with Leaflet"
+author: "Javier Pozueco"
+date: "2022-08-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Web page created using R Markdown that features a map created with Leaflet with marks about marine marks sin San Francisco:
+
+```{r}
+#Loading the necessary libraries:
+library(leaflet)
+
+clubs_information <- read.csv("San_Francisco.csv")
+clubs_coordinates <- data.frame(Lat = clubs_information$Latitude,
+                                Long = clubs_information$Longitude,
+                                Name = clubs_information$Name)
+
+clubs_coordinates %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(clusterOptions = markerClusterOptions())
+
+```
+
